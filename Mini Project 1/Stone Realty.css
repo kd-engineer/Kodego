@@ -136,6 +136,7 @@ body {
     background-image: url(./assets/background/brick-wall-6.jpeg);
     background-size: cover;
     height: 100%;
+    padding-bottom: 1px;
 }
 
 #property-section h4 {
@@ -197,6 +198,10 @@ body {
     .navbar nav {
         text-align: center;
         width: auto;
+    }
+
+    .carousel-caption {
+        width: 100%;
     }
 
     .carousel-caption h5 {

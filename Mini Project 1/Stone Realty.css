@@ -5,13 +5,221 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.navbar {
+    background: rgba(225,225,225,0.50);
+    backdrop-filter: blur(1rem);
+    z-index: 2;
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+.navbar-nav > li {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
 .navbar-nav a {
     font-size: 15px;
     font-weight: 1000;
+    color: maroon;
 }
 
 .navbar-brand {
-    color: #000;
     font-size: 25px;
     font-weight: 1000;
+    height: 40px;
+}
+
+.carousel-item {
+    height: 100vh;
+    width: auto;
+}
+
+.carousel-caption {
+    bottom: 250px;
+    z-index: 2;
+}
+
+.carousel-caption h5 {
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+
+.carousel caption p {
+    width: 60%;
+    margin: auto;
+    font-size: 20px;
+    line-height: 1.9;
+}
+
+#inner::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+}
+
+.w-100 {
+    width: 100vh;
+}
+
+#about-us > div h3 {
+    font-family: sans-serif;
+}
+
+
+
+
+/* === Properties_Page === */
+
+#properties-page {
+    background: url(./assets/background/brick-wall-9.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#headline-img > img {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+}
+
+.card {
+    max-width: 400px;
+    max-height: 450px;
+    background: rgba(0,0,0,0.10);
+    backdrop-filter: blur(1rem);
+    color: white;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: ease-in;
+    box-shadow: 0 0 10px  black,
+                0 0 20px  black;
+    z-index: 2;
+}
+
+.container .pagination > li > a {
+  border: 1px solid maroon;
+  color: maroon;
+}
+.pagination > li.active > a {
+  background: maroon;
+  color: #fff;
+}
+
+#pagination-btn > a {
+    background: #DF2E38;
+    color: white;
+}
+
+#pagination-btn > a:hover {
+    color: white;
+    background: maroon;
+    border-color: #ddd;
+}
+
+
+
+/* === Property_SR === */
+
+#property-section {
+    background-image: url(./assets/background/brick-wall-6.jpeg);
+    background-size: cover;
+    height: 100%;
+}
+
+#property-section h4 {
+    width: 75vw;
+    background: rgba(0,0,0,0.10);
+    backdrop-filter: blur(1rem);
+    box-shadow: 0 0 10px #fff5b6, 0 0 40px #fff5b6, 0 0 80px #fff5b6;
+}
+
+#carousel_hl {
+    max-height: 70vh;
+    width: auto;
+}
+
+#property_hl {
+    max-height: 70vh;
+}
+
+#property_hl img {
+    max-height: 70vh;
+    width: auto;
+}
+
+#property-description {
+    background: rgba(225,225,225,0.10);
+    backdrop-filter: blur(1rem);
+}
+
+
+
+/* === Contact Us Page === */
+
+#Contact-Us {
+    height: 100vh;
+    background-image: url(./assets/background/brick-wall-8.jpeg);
+    background-size: cover;
+}
+
+#contact-form {
+    background: rgba(225,225,225,0.10);
+    backdrop-filter: blur(1rem);
+    z-index: 1;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: black;
+}
+
+#nav-sell {
+    background: rgba(225,225,225,0.10);
+    backdrop-filter: blur(1rem);
+    z-index: 1;
+}
+
+
+/* === responsive css === */
+
+@media only screen and (max-width: 767px) {
+    .navbar nav {
+        text-align: center;
+        width: auto;
+    }
+
+    .carousel-caption h5 {
+        font-size: 17px;
+    }
+    .carousel-caption a {
+        padding: 10px 15px;
+    }
+
+    .carousel-item {
+        height: 300px;
+        width: 100%;
+    }
+
+    .carousel-item img {
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    #property-section {
+        height: 100%;
+        width: 100%;
+        padding: 1px;
+    }
 }
